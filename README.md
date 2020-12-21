@@ -81,6 +81,7 @@ depending on what sort you have set for the buffer names the current
 buffer name may not be in view in the popup, however you can always
 quickly find it and automatically move the popup cursor to it by pressing:
 C-f
+
 Note that if you are using Isearch and the current buffer is filtered
 out then C-f will not work.
 
