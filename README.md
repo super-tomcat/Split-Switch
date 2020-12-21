@@ -31,9 +31,22 @@ If you are not sure, then just add the lines that require this file and
 setup the keybindings to it, to the very end of your init file and
 everything should work.
 
-```
-Keys while in the popup:
+Example Configuration....
+============================================================================
+Note that these will replace Emacs default keys for splitting the window on
+the right and splitting it below.....
 
+```
+(require 'split-switch)
+(global-set-key (kbd "C-x 3") 'split-switch-split-window-right)
+(global-set-key (kbd "C-x 2") 'split-switch-split-window-below)
+;; Sort by Modification Time but with Special Buffers at the top
+(setq split-switch-buffer-name-sort-order 7)
+```
+
+Keys while in the popup:
+===========================================
+```
 C-n - next item in popup
 Cursor Down - next item in popup
 C-p - previous item in popup
