@@ -49,25 +49,6 @@ C-h - same as Backspace, deletes 1 Isearch character
 
 C-g - cancels the popup and closes it.
 ```
-
-Isearch
-
-When Isearch is on any characters you type will be searched for
-and highlighted and only the buffer names that have them
-characters will be shown in the popup.
-
-If no chars are found then the popup may fully disappear.
-
-If this happens then you can either press Backspace (or C-h) to delete
-each character entered, when all characters entered have been deleted all the
-buffer names will appear in the popup again.
-
-Or you can also press C-b or Cursor Left to delete all characters entered in one
-go and put the selection back at the top of the popup.
-
-All characters you enter during an Isearch will be shown in the Minibuffer
-next to the word... Pattern:
-
 Press Enter on any buffer name to put that buffer in the new window and
 close the popup.
 
@@ -84,6 +65,24 @@ C-f
 
 Note that if you are using Isearch and the current buffer is filtered
 out then C-f will not work.
+
+Isearch
+=============================================
+When Isearch is on any characters you type will be searched for
+and highlighted and only the buffer names that have them
+characters will be shown in the popup.
+
+If no chars are found then the popup may fully disappear.
+
+If this happens then you can either press Backspace (or C-h) to delete
+each character entered, when all characters entered have been deleted all the
+buffer names will appear in the popup again.
+
+Or you can also press C-b or Cursor Left to delete all characters entered in one
+go and put the selection back at the top of the popup.
+
+All characters you enter during an Isearch will be shown in the Minibuffer
+next to the word... Pattern:
 
 Press C-g at anytime to cancel and close the popup.
 
