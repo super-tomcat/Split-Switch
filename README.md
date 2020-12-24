@@ -1,7 +1,4 @@
 # Split-Switch
-
-Coming Soon :-)
-
 Display a popup of buffer names to put in a new window after splitting.
 
 ![alt text](https://github.com/super-tomcat/split-switch/blob/main/split-switch_example_1.gif?raw=true)
@@ -27,12 +24,39 @@ installed, if not and you use Package in Emacs to install your packages
 then you need to make sure that the line where you require this file
 in your Emacs init file, appears AFTER the lines where you install the
 popup package.
-If you are not sure, then just add the lines that require this file and
-setup the keybindings to it, to the very end of your init file and
-everything should work.
+
+You need to put this file (split-switch.el) in a folder where Emacs
+can see it.
+If you are not sure how to do this then you can do what i do...
+
+I have created a new folder inside my Emacs (.emacs.d) folder
+called: site-lisp
+
+In this folder i put all my seperate .el files that i want to load and
+use when Emacs starts.
+
+Once you have created this folder, put the file: split-switch.el inside it.
+
+To make Emacs see the files in this folder you need to add this line to
+the top of your Emacs init.el file:
+
+```(add-to-list 'load-path (expand-file-name "~/.emacs.d/site-lisp"))```
+
+You can now load any of the files in this folder, usually by adding something
+like:
+
+```(require 'split-switch)```
+
+to your Emacs init file and then set any customization you need.
+
+If you know how to you can also byte-compile the split-switch.el file, just
+open it in Emacs and go: Emacs-Lisp > Byte Compile This File, from the Emacs
+menu and its done.
 
 Example Configuration....
 ============================================================================
+Add these lines to the end of your Emacs init.el file.
+
 Note that these will replace Emacs default keys for splitting the window on
 the right and splitting it below.....
 
