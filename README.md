@@ -12,6 +12,9 @@ It would be great if i could split the window and at the same time decide
 what buffer i want in it, preferably via a popup, thus...
 Split-Switch was born :-)
 
+Installing into Emacs....
+============================================================================
+
 This program requires the excellent popup package that can be found here
 
 https://github.com/auto-complete/popup-el
@@ -25,7 +28,7 @@ then you need to make sure that the line where you require this file
 in your Emacs init file, appears AFTER the lines where you install the
 popup package.
 
-You need to put this file (split-switch.el) in a folder where Emacs
+You then need to put the file (split-switch.el) in a folder where Emacs
 can see it.
 If you are not sure how to do this then you can do what i do...
 
